@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dreamcoding_practice</title>
+    <script src="https://kit.fontawesome.com/3566354ac8.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="this.css">
+    <link href="https://fonts.googleapis.com/css2?family=Yellowtail&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="title">
+            <i class="fab fa-accusoft"></i>
+            <a href="">DreamCoding</a>
+        </nav>
+
+        <ul class="menu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Gallerly</a></li>
+            <li><a href="#">Weddings</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Bookings</a></li>
+        </ul>
+
+        <nav class="icons">
+            <a href="https://twitter.com/explore" target="_blank" title="twitter"><i class="fab fa-twitter" ></i></a>
+            <a href="https://facebook.com" target="_blank" title="facebook"><i class="fab fa-facebook-f"></i></a>
+        </nav>
+
+        <a href="#" class="menubar">
+            <i class="fas fa-bars"></i>
+        </a>
+    </header>
+    <script>
+        var menu=document.querySelector('.menu');
+        var icons=document.querySelector('.icons');
+        var menubar=document.querySelector('.menubar');
+        
+        function clickHandler(){
+            menu.classList.toggle('active');
+            icons.classList.toggle('active');
+        }
+        menubar.addEventListener('click', clickHandler);
+    </script>
+</body>
+</html>

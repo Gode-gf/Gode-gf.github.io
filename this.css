@@ -1,0 +1,82 @@
+body{
+    margin: 0;
+    font-family: 'Yellowtail', cursive;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: darkgrey;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: white;
+}
+.title{
+    font-size: 30px;
+}
+.title i{
+    color: saddlebrown;
+}
+.menu{
+    display: flex;
+    padding-left: 0;
+    list-style: none;
+    font-size: 20px;
+}
+.menu li{
+    padding-bottom: 10px;
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: white;
+}
+.icons{
+    font-size: 20px;
+}
+.icons i{
+    padding: 8px;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+li:hover{
+    background-color: thistle;
+    border-radius: 5px;
+}
+.menubar{
+    position: absolute;
+    display: none;
+    font-size: 23px;
+    right: 30px;
+    color: snow;
+}
+@media screen and (max-width:800px){
+    header{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .menu{
+        display: none;
+        flex-direction: column;
+        text-align: center;
+        width: 100%;
+    }
+    .icons{
+        display: none;
+        width: 100%;
+        justify-content: center;
+    }
+    .icons i{
+        color: steelblue;
+    }
+    .menubar{
+        display: block;
+    }
+    .menu.active,
+    .icons.active{
+        display:flex;
+    }
+}
